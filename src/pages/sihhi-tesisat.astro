@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+import pipesDoodle from '../assets/pipesDoodle.webp';
+---
+
+<Layout
+	title="Samsun Sıhhi Tesisat Çözümleri | Profesyonel Tesisat Hizmetleri | renazteknik.com"
+	description="Samsun'da sıhhi tesisat çözümleri. İlkadım, Atakum, Canik'te profesyonel tesisat tamiri, batarya değişimi, gider sorunları. Hızlı servis, garantili hizmet."
+	keywords="Samsun sıhhi tesisat, İlkadım tesisat tamiri, Atakum tesisat, Canik tesisatçı, banyo tesisat tamiri, mutfak tesisat"
+>
+	<div class="tiled-background-wrapper relative min-h-screen py-12">
+		<div 
+			class="tiled-background-pattern parallax-bg" 
+			style={`background-image: url('${pipesDoodle.src}');`}
+			aria-hidden="true"
+		></div>
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+		<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000000] mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+			Sıhhi Tesisat Çözümleri
+		</h1>
+		<div class="h-1 w-24 bg-[#fad000] mb-8"></div>
+		
+		<div class="max-w-4xl mx-auto space-y-8">
+			<div class="bg-white p-8 rounded-lg shadow-md">
+				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					Ev ve iş yerlerinizdeki tüm sıhhi tesisat ihtiyaçlarını profesyonel ekip ve modern ekipmanlarla çözüyoruz. Banyo – mutfak tesisat tamiri, batarya ve armatür değişimi, su bağlantıları, gider sorunları gibi birçok hizmeti temiz işçilik ve hızlı servisle sunuyoruz. Uzun ömürlü ve garantili çözümler için doğru adrestesiniz.
+				</p>
+
+				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Hizmetlerimiz
+				</h2>
+				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-lg text-[#000000]"><strong>Banyo ve Mutfak Tesisat Tamiri:</strong> Tüm tesisat sistemlerinizin bakımı, onarımı ve yenilenmesi</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-lg text-[#000000]"><strong>Batarya ve Armatür Değişimi:</strong> Modern, kaliteli batarya ve armatür montajı</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-lg text-[#000000]"><strong>Su Bağlantıları:</strong> Soğuk ve sıcak su tesisatı kurulumu ve bağlantıları</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-lg text-[#000000]"><strong>Gider Sorunları:</strong> Tıkanıklık açma, gider yenileme ve bakımı</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-lg text-[#000000]"><strong>Lavabo ve Klozet Montajı:</strong> Profesyonel montaj ve bağlantı işlemleri</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-lg text-[#000000]"><strong>Pis Su Tesisatı:</strong> Atık su sistemlerinin kurulumu ve bakımı</span>
+					</li>
+				</ul>
+
+				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Neden Bizi Tercih Etmelisiniz?
+				</h2>
+				<p class="text-lg text-[#000000] leading-relaxed mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
+					Yılların deneyimi ve modern teknoloji ile donatılmış ekipmanlarımız sayesinde, tüm sıhhi tesisat sorunlarınızı en kısa sürede ve en kalıcı şekilde çözüyoruz. İşçilik garantisi ve kaliteli malzeme kullanımı ile hizmet veriyoruz. Müşteri memnuniyeti önceliğimizdir.
+				</p>
+
+				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Garanti ve Hizmet
+				</h2>
+				<p class="text-lg text-[#000000] leading-relaxed" style="font-family: 'Roboto Condensed', sans-serif;">
+					Tüm tamirat ve montaj işlemlerimiz 1 yıl garantilidir. Kullanılan malzemelerin üretici garantisi de sağlanır. İş sonrası düzenli kontroller ve bakım hizmetleri ile sisteminizin sorunsuz çalışmasını garanti ediyoruz.
+				</p>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Service",
+	"serviceType": "Sıhhi Tesisat Çözümleri",
+	"provider": {
+		"@type": "LocalBusiness",
+		"name": "Renaz Teknik",
+		"telephone": "+905346706294",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Samsun",
+			"addressRegion": "SAMSUN",
+			"addressCountry": "TR"
+		}
+	},
+	"areaServed": [
+		{
+			"@type": "City",
+			"name": "Samsun"
+		},
+		{
+			"@type": "City",
+			"name": "İlkadım"
+		},
+		{
+			"@type": "City",
+			"name": "Atakum"
+		},
+		{
+			"@type": "City",
+			"name": "Canik"
+		},
+		{
+			"@type": "City",
+			"name": "Tekkeköy"
+		}
+	],
+	"description": "Ev ve iş yerlerinizdeki tüm sıhhi tesisat ihtiyaçlarını profesyonel ekip ve modern ekipmanlarla çözüyoruz. Banyo – mutfak tesisat tamiri, batarya ve armatür değişimi, su bağlantıları, gider sorunları gibi birçok hizmeti temiz işçilik ve hızlı servisle sunuyoruz."
+}).replace(/</g, '\\u003c')} />
+
+<style>
+	.tiled-background-wrapper {
+		--tile-size: 200px;
+		background-color: #eeeeee;
+		position: relative;
+	}
+
+	.tiled-background-pattern {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 0;
+		opacity: 0.2;
+		background-size: 200px 200px;
+		background-repeat: repeat;
+		background-position: 0 0;
+	}
+
+	/* Ensure content stays above background */
+	.tiled-background-wrapper > div:not(.tiled-background-pattern) {
+		position: relative;
+		z-index: 1;
+	}
+
+	.parallax-bg {
+		will-change: transform;
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+	}
+</style>
+
+<script>
+	function initParallax() {
+		const parallaxElements = document.querySelectorAll('.parallax-bg');
+		if (parallaxElements.length === 0) return;
+
+		function updateParallax() {
+			const scrollY = window.pageYOffset || window.scrollY || document.documentElement.scrollTop;
+			// Use 0.25 scroll factor for all views
+			const scrollFactor = 0.25;
+
+			parallaxElements.forEach((element) => {
+				const htmlElement = element as HTMLElement;
+				const wrapper = htmlElement.closest('.tiled-background-wrapper') as HTMLElement;
+				if (!wrapper) return;
+
+				// Calculate background position offset based on scroll position
+				const offsetY = scrollY * scrollFactor;
+				// Keep the pattern seamless by using modulo
+				const tileSize = 200;
+				const normalizedOffset = offsetY % tileSize;
+				
+				htmlElement.style.backgroundPosition = `0 ${normalizedOffset}px`;
+			});
+		}
+
+		// Throttle scroll events for better performance
+		let ticking = false;
+		function onScroll() {
+			if (!ticking) {
+				window.requestAnimationFrame(() => {
+					updateParallax();
+					ticking = false;
+				});
+				ticking = true;
+			}
+		}
+
+		// Initial calculation
+		updateParallax();
+
+		// Listen to scroll events
+		window.addEventListener('scroll', onScroll, { passive: true });
+		window.addEventListener('resize', updateParallax);
+
+		// Cleanup function
+		return () => {
+			window.removeEventListener('scroll', onScroll);
+			window.removeEventListener('resize', updateParallax);
+		};
+	}
+
+	// Initialize when DOM is ready
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initParallax);
+	} else {
+		initParallax();
+	}
+</script>
+

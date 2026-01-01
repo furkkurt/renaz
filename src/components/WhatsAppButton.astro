@@ -1,0 +1,34 @@
+---
+import whatsappIcon from '../assets/whatsapp.svg';
+import phoneIcon from '../assets/phone.svg';
+---
+
+<div class="contact-buttons fixed bottom-6 z-50 flex gap-4 right-6">
+  <!-- Phone Button - Left (Mobile Only) -->
+  <a
+    href="tel:05346706294"
+    class="bg-[#e3decf] hover:bg-[#fad000] rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 block md:hidden"
+    aria-label="Telefon ile iletişime geç"
+  >
+    <img
+      src={phoneIcon.src}
+      alt="Telefon"
+      class="w-8 h-8"
+    />
+  </a>
+
+  <!-- WhatsApp Button - Right -->
+  <a
+    href="https://wa.me/905346706294"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="bg-[#e3decf] hover:bg-[#fad000] rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300"
+    aria-label="WhatsApp ile iletişime geç"
+  >
+    <img
+      src={whatsappIcon.src}
+      alt="WhatsApp"
+      class="w-8 h-8"
+    />
+  </a>
+</div>
