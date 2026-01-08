@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import heaterDoodle from '../assets/heaterDoodle2.webp';
+import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 ---
 
 <Layout
@@ -73,9 +74,17 @@ import heaterDoodle from '../assets/heaterDoodle2.webp';
 				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
 					Ne Zaman Temizlik Yapılmalı?
 				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
+				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
 					Petek temizliği genellikle 3-5 yılda bir yapılmalıdır. Ancak peteklerden yeterli ısı gelmiyorsa, peteklerin alt kısımları soğuk kalıyorsa veya kombi sürekli çalışıyorsa daha erken temizlik gerekebilir. Kışa girmeden önce yapılan temizlik, sezon boyunca konforlu bir ısınma sağlar.
 				</p>
+				
+				<div class="mt-8 overflow-hidden rounded-lg">
+					<img 
+						src={petekTemizlikImage.src} 
+						alt="Petek Temizliği" 
+						class="w-full h-auto"
+					/>
+				</div>
 			</div>
 		</div>
 	</div>

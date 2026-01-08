@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import kitchenDoodle from '../assets/kitchenDoodle.avif';
 import bathroomDoodle from '../assets/bathroomDoodle.webp';
+import mutfakImage from '../assets/services/farkli-tarz-mutfaklar.jpg';
 ---
 
 <Layout
@@ -116,9 +117,17 @@ import bathroomDoodle from '../assets/bathroomDoodle.webp';
 				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
 					Tadilat Süresi
 				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed" style="font-family: 'Roboto Condensed', sans-serif;">
+				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
 					Banyo tadilatının süresi projenin kapsamına göre değişir. Küçük değişiklikler 3-5 gün sürebilirken, tam yenileme projeleri 10-15 iş günü sürebilir. Mutfak tadilatları ise genellikle 5-10 iş günü arasında tamamlanır. Proje başlangıcında detaylı bir zaman planlaması yapılır ve size net bir teslimat tarihi verilir.
 				</p>
+				
+				<div class="mt-8 overflow-hidden rounded-lg">
+					<img 
+						src={mutfakImage.src} 
+						alt="Banyo ve Mutfak Yenileme (Tadilat)" 
+						class="w-full h-auto"
+					/>
+				</div>
 			</div>
 		</div>
 	</div>

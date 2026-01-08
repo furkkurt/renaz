@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import lineDoodle from '../assets/lineDoodle.webp';
+import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 ---
 
 <Layout
@@ -80,9 +81,17 @@ import lineDoodle from '../assets/lineDoodle.webp';
 				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
 					Önleme Önerileri
 				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed" style="font-family: 'Roboto Condensed', sans-serif;">
+				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
 					Tıkanıklıkları önlemek için süzgeç kullanın, yağları lavaboya dökmeyin ve haftada bir kez sıcak su uygulayın. Tekrar eden tıkanıklıklarda mutlaka profesyonel müdahale gereklidir çünkü altta yatan bir boru problemi olabilir.
 				</p>
+				
+				<div class="mt-8 overflow-hidden rounded-lg">
+					<img 
+						src={tikaniklikAcmaImage.src} 
+						alt="Tıkanıklık Açma" 
+						class="w-full h-auto"
+					/>
+				</div>
 			</div>
 		</div>
 	</div>

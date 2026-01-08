@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import heaterDoodle from '../assets/heaterDoodle.webp';
+import kombiTamirImage from '../assets/services/kombitamiri1.jpg';
 ---
 
 <Layout
@@ -77,9 +78,17 @@ import heaterDoodle from '../assets/heaterDoodle.webp';
 				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
 					Neden Düzenli Bakım Önemlidir?
 				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
+				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
 					Düzenli kombi bakımı enerji tasarrufu sağlar, kombinin ömrünü uzatır ve beklenmedik arızaları önler. Bakım yapılmayan kombiler %30-40 daha fazla doğalgaz tüketir ve arıza verme riski yüksektir. Yılda bir kez yapılacak profesyonel bakım ile hem faturalarınız düşer hem de konforunuz artar.
 				</p>
+				
+				<div class="mt-8 overflow-hidden rounded-lg">
+					<img 
+						src={kombiTamirImage.src} 
+						alt="Kombi Bakım ve Arıza Çözümleri" 
+						class="w-full h-auto"
+					/>
+				</div>
 			</div>
 		</div>
 	</div>
