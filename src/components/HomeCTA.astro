@@ -1,0 +1,61 @@
+---
+import whatsappIcon from '../assets/whatsapp.svg';
+import phoneIcon from '../assets/phone.svg';
+---
+
+<section class="py-16 bg-[#e3decf]">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold text-[#000000] mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
+      Acil Tesisat Sorununuz mu Var?
+    </h2>
+    <p class="text-xl sm:text-2xl text-[#000000] mb-8" style="font-family: 'Roboto Condensed', sans-serif;">
+      Beklemeden çözüm için hemen bizimle iletişime geçin.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <!-- Phone Button (Yellow) -->
+      <a
+        href="tel:05346706294"
+        class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-[#000000] font-bold text-xl animate-pulse-soft"
+        aria-label="Hemen Ara"
+      >
+        <img
+          src={phoneIcon.src}
+          alt="Telefon"
+          class="w-6 h-6"
+        />
+        <span>Hemen Ara <span class="font-bold">7/24</span></span>
+      </a>
+
+      <!-- WhatsApp Button (Green) -->
+      <a
+        href="https://wa.me/905346706294"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-bold text-xl"
+        aria-label="WhatsApp'tan Yaz"
+      >
+        <img
+          src={whatsappIcon.src}
+          alt="WhatsApp"
+          class="w-6 h-6 brightness-0 invert"
+        />
+        <span>WhatsApp'tan Yaz</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes pulse-soft {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .animate-pulse-soft {
+    animation: pulse-soft 1.5s ease-in-out infinite;
+  }
+</style>

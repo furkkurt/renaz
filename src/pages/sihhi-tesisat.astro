@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import pipesDoodle from '../assets/pipesDoodle.webp';
 import sihhiTesisatImage from '../assets/services/sihhitesisat.jpg';
+import whatsappIcon from '../assets/whatsapp.svg';
+import phoneIcon from '../assets/phone.svg';
 ---
 
 <Layout
@@ -16,59 +18,138 @@ import sihhiTesisatImage from '../assets/services/sihhitesisat.jpg';
 			aria-hidden="true"
 		></div>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-		<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000000] mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-			Sıhhi Tesisat Çözümleri
+		<h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#000000] mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+			Samsun Sıhhi Tesisat Hizmetleri – Hızlı ve Garantili Çözümler
 		</h1>
 		<div class="h-1 w-24 bg-[#fad000] mb-8"></div>
 		
 		<div class="max-w-4xl mx-auto space-y-8">
+			<!-- Üst Açıklama ve Butonlar -->
 			<div class="bg-white p-8 rounded-lg shadow-md">
-				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-					Ev ve iş yerlerinizdeki tüm sıhhi tesisat ihtiyaçlarını profesyonel ekip ve modern ekipmanlarla çözüyoruz. Banyo – mutfak tesisat tamiri, batarya ve armatür değişimi, su bağlantıları, gider sorunları gibi birçok hizmeti temiz işçilik ve hızlı servisle sunuyoruz. Uzun ömürlü ve garantili çözümler için doğru adrestesiniz.
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					Ev veya iş yerinizde tesisat sorunu mu var?<br/>
+					Renaz Teknik olarak Samsun genelinde tüm sıhhi tesisat arızalarına hızlı, temiz ve garantili çözümler sunuyoruz.
+				</p>
+				
+				<div class="flex flex-col sm:flex-row items-start gap-4 mb-8">
+					<a
+						href="tel:05346706294"
+						class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-[#000000] font-bold text-xl animate-pulse-soft"
+						aria-label="Hemen Ara"
+					>
+						<img src={phoneIcon.src} alt="Telefon" class="w-6 h-6" />
+						<span>Hemen Ara <span class="font-bold">7/24</span></span>
+					</a>
+					<a
+						href="https://wa.me/905346706294"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-bold text-xl"
+						aria-label="WhatsApp'tan Yaz"
+					>
+						<img src={whatsappIcon.src} alt="WhatsApp" class="w-6 h-6 brightness-0 invert" />
+						<span>WhatsApp'tan Yaz</span>
+					</a>
+				</div>
+
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Sıhhi Tesisat Hizmeti Nedir?
+				</h2>
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					Sıhhi tesisat, yaşam alanlarında temiz suyun sağlıklı şekilde kullanılması ve atık suların güvenli biçimde tahliye edilmesini sağlayan sistemdir. Bu sistemlerde oluşan en küçük arıza bile zamanla büyük sorunlara yol açabilir.<br/>
+					Renaz Teknik olarak tüm tesisat arızalarına profesyonel ekipman ve tecrübeli ustalarla müdahale ediyoruz.
 				</p>
 
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Hizmetlerimiz
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Verdiğimiz Sıhhi Tesisat Hizmetleri
 				</h2>
 				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Banyo ve Mutfak Tesisat Tamiri:</strong> Tüm tesisat sistemlerinizin bakımı, onarımı ve yenilenmesi</span>
+						<span class="text-xl text-[#000000]">Musluk ve batarya tamiri</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Batarya ve Armatür Değişimi:</strong> Modern, kaliteli batarya ve armatür montajı</span>
+						<span class="text-xl text-[#000000]">Klozet ve rezervuar tamiri</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Su Bağlantıları:</strong> Soğuk ve sıcak su tesisatı kurulumu ve bağlantıları</span>
+						<span class="text-xl text-[#000000]">Lavabo ve gider bağlantıları</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Gider Sorunları:</strong> Tıkanıklık açma, gider yenileme ve bakımı</span>
+						<span class="text-xl text-[#000000]">Su tesisatı yenileme</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Lavabo ve Klozet Montajı:</strong> Profesyonel montaj ve bağlantı işlemleri</span>
+						<span class="text-xl text-[#000000]">Kaçak ve sızıntı onarımı</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Pis Su Tesisatı:</strong> Atık su sistemlerinin kurulumu ve bakımı</span>
+						<span class="text-xl text-[#000000]">Montaj ve değişim işlemleri</span>
 					</li>
 				</ul>
 
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Neden Bizi Tercih Etmelisiniz?
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Neden Renaz Teknik?
 				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
-					Yılların deneyimi ve modern teknoloji ile donatılmış ekipmanlarımız sayesinde, tüm sıhhi tesisat sorunlarınızı en kısa sürede ve en kalıcı şekilde çözüyoruz. İşçilik garantisi ve kaliteli malzeme kullanımı ile hizmet veriyoruz. Müşteri memnuniyeti önceliğimizdir.
+				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Deneyimli tesisat ustaları</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Aynı gün servis imkânı</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Garantili işçilik</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Temiz ve düzenli çalışma</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Şeffaf fiyatlandırma</span>
+					</li>
+				</ul>
+
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Nasıl Çalışıyoruz?
+				</h2>
+				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">1.</span>
+						<span class="text-xl text-[#000000]">Sorun yerinde tespit edilir</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">2.</span>
+						<span class="text-xl text-[#000000]">Uygun çözüm müşteriye açıklanır</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">3.</span>
+						<span class="text-xl text-[#000000]">Onarım veya montaj işlemi yapılır</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">4.</span>
+						<span class="text-xl text-[#000000]">Sistem kontrol edilerek teslim edilir</span>
+					</li>
+				</ul>
+
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Sıhhi Tesisat Arızaları Neden Önemlidir?
+				</h2>
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					Küçük görünen tesisat arızaları zamanla su israfına, nem oluşumuna ve yapı hasarına yol açabilir. Erken müdahale hem maliyeti düşürür hem de daha büyük sorunların önüne geçer.
 				</p>
 
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Garanti ve Hizmet
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Hizmet Bölgeleri
 				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-					Tüm tamirat ve montaj işlemlerimiz 1 yıl garantilidir. Kullanılan malzemelerin üretici garantisi de sağlanır. İş sonrası düzenli kontroller ve bakım hizmetleri ile sisteminizin sorunsuz çalışmasını garanti ediyoruz.
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					İlkadım, Canik, Atakum, Tekkeköy ve Samsun genelinde hizmet vermekteyiz.
 				</p>
 				
 				<div class="mt-8 overflow-hidden rounded-lg">
@@ -77,6 +158,33 @@ import sihhiTesisatImage from '../assets/services/sihhitesisat.jpg';
 						alt="Sıhhi Tesisat Çözümleri" 
 						class="w-full h-auto"
 					/>
+				</div>
+			</div>
+
+			<!-- Alt Çağrı Alanı -->
+			<div class="bg-[#e3decf] p-8 rounded-lg shadow-md text-center">
+				<h2 class="text-3xl sm:text-4xl font-bold text-[#000000] mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
+					Sıhhi tesisat hizmeti için hemen bizimle iletişime geçin.
+				</h2>
+				<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+					<a
+						href="tel:05346706294"
+						class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-[#000000] font-bold text-xl animate-pulse-soft"
+						aria-label="Hemen Ara"
+					>
+						<img src={phoneIcon.src} alt="Telefon" class="w-6 h-6" />
+						<span>Hemen Ara <span class="font-bold">7/24</span></span>
+					</a>
+					<a
+						href="https://wa.me/905346706294"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-bold text-xl"
+						aria-label="WhatsApp'tan Yaz"
+					>
+						<img src={whatsappIcon.src} alt="WhatsApp" class="w-6 h-6 brightness-0 invert" />
+						<span>WhatsApp'tan Yaz</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -151,6 +259,19 @@ import sihhiTesisatImage from '../assets/services/sihhitesisat.jpg';
 		will-change: transform;
 		backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
+	}
+
+	@keyframes pulse-soft {
+		0%, 100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.05);
+		}
+	}
+	
+	.animate-pulse-soft {
+		animation: pulse-soft 1.5s ease-in-out infinite;
 	}
 </style>
 

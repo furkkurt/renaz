@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import heaterDoodle from '../assets/heaterDoodle2.webp';
 import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
+import whatsappIcon from '../assets/whatsapp.svg';
+import phoneIcon from '../assets/phone.svg';
 ---
 
 <Layout
@@ -16,67 +18,73 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 			aria-hidden="true"
 		></div>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-		<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000000] mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-			Petek Temizliği
+		<h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#000000] mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+			Samsun Petek Temizliği – Aynı Gün Servis
 		</h1>
 		<div class="h-1 w-24 bg-[#fad000] mb-8"></div>
 		
 		<div class="max-w-4xl mx-auto space-y-8">
+			<!-- Üst Açıklama ve Butonlar -->
 			<div class="bg-white p-8 rounded-lg shadow-md">
-				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-					Kombi ve petek verimini yükselten profesyonel makinelerle kimyasal veya makine destekli petek temizliği yapıyoruz. Evinizi daha hızlı ısıtan, faturalarınızı düşüren, sağlıklı ısı dolaşımı sağlayan etkili bir temizlik hizmeti sunuyoruz. Kışa girmeden mutlaka yapılması önerilir.
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					Petekleriniz yeterince ısınmıyor mu? Kombiniz sürekli çalışıyor ama eviniz geç mi ısınıyor?<br/>
+					Renaz Teknik olarak Samsun genelinde profesyonel ve garantili petek temizliği hizmeti sunuyoruz.
+				</p>
+				
+				<div class="flex flex-col sm:flex-row items-start gap-4 mb-8">
+					<a
+						href="tel:05346706294"
+						class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-[#000000] font-bold text-xl animate-pulse-soft"
+						aria-label="Hemen Ara"
+					>
+						<img src={phoneIcon.src} alt="Telefon" class="w-6 h-6" />
+						<span>Hemen Ara <span class="font-bold">7/24</span></span>
+					</a>
+					<a
+						href="https://wa.me/905346706294"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-bold text-xl"
+						aria-label="WhatsApp'tan Yaz"
+					>
+						<img src={whatsappIcon.src} alt="WhatsApp" class="w-6 h-6 brightness-0 invert" />
+						<span>WhatsApp'tan Yaz</span>
+					</a>
+				</div>
+
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Petek Temizliği Nedir?
+				</h2>
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					Zamanla peteklerin içinde çamur, tortu ve kireç birikir. Bu durum peteklerin alt kısmının soğuk kalmasına ve ısınma performansının düşmesine neden olur. Aynı zamanda doğalgaz faturalarının artmasına yol açar.<br/>
+					Makine destekli petek temizliği ile bu tortular tamamen temizlenir ve sistem tekrar verimli şekilde çalışır.
 				</p>
 
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Petek Temizliği Yöntemleri
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Neden Petek Temizliği Yaptırmalısınız?
 				</h2>
 				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Makine Destekli Temizlik:</strong> Yüksek basınçlı özel makinelerle derin temizlik</span>
+						<span class="text-xl text-[#000000]">Petekler daha hızlı ve dengeli ısınır</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Kimyasal Temizlik:</strong> Tortu çözücü özel kimyasallar ile temizlik</span>
+						<span class="text-xl text-[#000000]">Kombi daha az çalışır, ömrü uzar</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Hibrit Yöntem:</strong> Her iki yöntemin kombinasyonu ile maksimum verim</span>
+						<span class="text-xl text-[#000000]">Doğalgaz faturaları düşer (%20-30 tasarruf)</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Evin her köşesi eşit şekilde ısınır</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Isı verimi %30-40 artar</span>
 					</li>
 				</ul>
-
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Petek Temizliğinin Faydaları
-				</h2>
-				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-					<li class="flex items-start">
-						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>%30-40 Daha Fazla Isı:</strong> Temiz petekler çok daha verimli çalışır</span>
-					</li>
-					<li class="flex items-start">
-						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Düşük Doğalgaz Faturası:</strong> Enerji tasarrufu ile faturalarda %20-30 azalma</span>
-					</li>
-					<li class="flex items-start">
-						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Hızlı Isınma:</strong> Odalar daha kısa sürede istenen sıcaklığa ulaşır</span>
-					</li>
-					<li class="flex items-start">
-						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Kombi Ömrünün Uzaması:</strong> Kombi daha az çalışır, ömrü uzar</span>
-					</li>
-					<li class="flex items-start">
-						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Sağlıklı Isı Dolaşımı:</strong> Evin her köşesi eşit şekilde ısınır</span>
-					</li>
-				</ul>
-
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Ne Zaman Temizlik Yapılmalı?
-				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-					Petek temizliği genellikle 3-5 yılda bir yapılmalıdır. Ancak peteklerden yeterli ısı gelmiyorsa, peteklerin alt kısımları soğuk kalıyorsa veya kombi sürekli çalışıyorsa daha erken temizlik gerekebilir. Kışa girmeden önce yapılan temizlik, sezon boyunca konforlu bir ısınma sağlar.
-				</p>
 				
 				<div class="mt-8 overflow-hidden rounded-lg">
 					<img 
@@ -84,6 +92,33 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 						alt="Petek Temizliği" 
 						class="w-full h-auto"
 					/>
+				</div>
+			</div>
+
+			<!-- Alt Çağrı Alanı -->
+			<div class="bg-[#e3decf] p-8 rounded-lg shadow-md text-center">
+				<h2 class="text-3xl sm:text-4xl font-bold text-[#000000] mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
+					Petek temizliği hizmeti için hemen bizimle iletişime geçin.
+				</h2>
+				<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+					<a
+						href="tel:05346706294"
+						class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-[#000000] font-bold text-xl animate-pulse-soft"
+						aria-label="Hemen Ara"
+					>
+						<img src={phoneIcon.src} alt="Telefon" class="w-6 h-6" />
+						<span>Hemen Ara <span class="font-bold">7/24</span></span>
+					</a>
+					<a
+						href="https://wa.me/905346706294"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-bold text-xl"
+						aria-label="WhatsApp'tan Yaz"
+					>
+						<img src={whatsappIcon.src} alt="WhatsApp" class="w-6 h-6 brightness-0 invert" />
+						<span>WhatsApp'tan Yaz</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -112,7 +147,7 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 		{ "@type": "City", "name": "Canik" },
 		{ "@type": "City", "name": "Tekkeköy" }
 	],
-	"description": "Kombi ve petek verimini yükselten profesyonel makinelerle kimyasal veya makine destekli petek temizliği yapıyoruz. Evinizi daha hızlı ısıtan, faturalarınızı düşüren, sağlıklı ısı dolaşımı sağlayan etkili bir temizlik hizmeti sunuyoruz."
+	"description": "Samsun genelinde profesyonel ve garantili petek temizliği hizmeti. Makine destekli petek temizliği ile daha verimli ısınma ve düşük faturalar."
 }).replace(/</g, '\\u003c')} />
 
 <style>
@@ -133,7 +168,6 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 		background-position: 0 0;
 	}
 
-	/* Ensure content stays above background */
 	.tiled-background-wrapper > div:not(.tiled-background-pattern) {
 		position: relative;
 		z-index: 1;
@@ -144,6 +178,19 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 		backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 	}
+
+	@keyframes pulse-soft {
+		0%, 100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.05);
+		}
+	}
+	
+	.animate-pulse-soft {
+		animation: pulse-soft 1.5s ease-in-out infinite;
+	}
 </style>
 
 <script>
@@ -153,7 +200,6 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 
 		function updateParallax() {
 			const scrollY = window.pageYOffset || window.scrollY || document.documentElement.scrollTop;
-			// Use 0.25 scroll factor for all views
 			const scrollFactor = 0.25;
 
 			parallaxElements.forEach((element) => {
@@ -161,9 +207,7 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 				const wrapper = htmlElement.closest('.tiled-background-wrapper') as HTMLElement;
 				if (!wrapper) return;
 
-				// Calculate background position offset based on scroll position
 				const offsetY = scrollY * scrollFactor;
-				// Keep the pattern seamless by using modulo
 				const tileSize = 200;
 				const normalizedOffset = offsetY % tileSize;
 				
@@ -171,7 +215,6 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 			});
 		}
 
-		// Throttle scroll events for better performance
 		let ticking = false;
 		function onScroll() {
 			if (!ticking) {
@@ -183,25 +226,19 @@ import petekTemizlikImage from '../assets/services/Petek-Temizleme.jpg';
 			}
 		}
 
-		// Initial calculation
 		updateParallax();
-
-		// Listen to scroll events
 		window.addEventListener('scroll', onScroll, { passive: true });
 		window.addEventListener('resize', updateParallax);
 
-		// Cleanup function
 		return () => {
 			window.removeEventListener('scroll', onScroll);
 			window.removeEventListener('resize', updateParallax);
 		};
 	}
 
-	// Initialize when DOM is ready
 	if (document.readyState === 'loading') {
 		document.addEventListener('DOMContentLoaded', initParallax);
 	} else {
 		initParallax();
 	}
 </script>
-

@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import lineDoodle from '../assets/lineDoodle.webp';
 import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
+import whatsappIcon from '../assets/whatsapp.svg';
+import phoneIcon from '../assets/phone.svg';
 ---
 
 <Layout
@@ -16,73 +18,149 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 			aria-hidden="true"
 		></div>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
-		<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000000] mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-			Tıkanıklık Açma
+		<h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#000000] mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+			Samsun Tıkanıklık Açma – Kırmadan Profesyonel Çözüm
 		</h1>
 		<div class="h-1 w-24 bg-[#fad000] mb-8"></div>
 		
 		<div class="max-w-4xl mx-auto space-y-8">
+			<!-- Üst Açıklama ve Butonlar -->
 			<div class="bg-white p-8 rounded-lg shadow-md">
-				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-					Gider, banyo, lavabo, tuvalet ve rögar tıkanıklıklarını kameralı sistemler ve profesyonel makinelerle kırmadan açıyoruz. Tekrar eden tıkanıklıkları kalıcı şekilde çözüyor, kötü kokuları gideriyor ve tesisattaki akışı yeniden düzenliyoruz. Temiz, hızlı ve sonuç odaklı hizmet.
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					Lavabo, tuvalet veya gider tıkandı mı? Su geri mi geliyor?<br/>
+					Renaz Teknik olarak Samsun genelinde kameralı ve makine destekli tıkanıklık açma hizmeti sunuyoruz.
+				</p>
+				
+				<div class="flex flex-col sm:flex-row items-start gap-4 mb-8">
+					<a
+						href="tel:05346706294"
+						class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-[#000000] font-bold text-xl animate-pulse-soft"
+						aria-label="Hemen Ara"
+					>
+						<img src={phoneIcon.src} alt="Telefon" class="w-6 h-6" />
+						<span>Hemen Ara <span class="font-bold">7/24</span></span>
+					</a>
+					<a
+						href="https://wa.me/905346706294"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-bold text-xl"
+						aria-label="WhatsApp'tan Yaz"
+					>
+						<img src={whatsappIcon.src} alt="WhatsApp" class="w-6 h-6 brightness-0 invert" />
+						<span>WhatsApp'tan Yaz</span>
+					</a>
+				</div>
+
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Tıkanıklık Açma Nedir?
+				</h2>
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					Gider borularında biriken yağ, kireç, saç ve atıklar zamanla tıkanıklığa yol açar. Bu durum kötü kokuya, su taşmasına ve ciddi tesisat sorunlarına neden olabilir.<br/>
+					Profesyonel ekipmanlarla yapılan tıkanıklık açma işlemi sayesinde borular kırılmadan ve zarar verilmeden temizlenir.
 				</p>
 
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Hizmet Alanları
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Hangi Tıkanıklıkları Açıyoruz?
 				</h2>
 				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Lavabo Tıkanıklığı:</strong> Banyo ve mutfak lavaboları</span>
+						<span class="text-xl text-[#000000]">Lavabo tıkanıklığı</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Klozet Tıkanıklığı:</strong> Tuvalet ve WC tıkanıklıkları</span>
+						<span class="text-xl text-[#000000]">Tuvalet tıkanıklığı</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Gider Tıkanıklığı:</strong> Banyo küveti ve duş giderleri</span>
+						<span class="text-xl text-[#000000]">Banyo gideri tıkanıklığı</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Rögar Tıkanıklığı:</strong> Bina dışı rögar ve kanal tıkanıklıkları</span>
+						<span class="text-xl text-[#000000]">Mutfak gideri tıkanıklığı</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Ana gider hattı tıkanıklığı</span>
 					</li>
 				</ul>
 
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Kullanılan Yöntemler
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Neden Renaz Teknik?
 				</h2>
 				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Kameralı Görüntüleme:</strong> Tıkanıklığın yerinin kesin tespiti</span>
+						<span class="text-xl text-[#000000]">Kırmadan işlem</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Yüksek Basınçlı Makine:</strong> Profesyonel tıkanıklık açma cihazları</span>
+						<span class="text-xl text-[#000000]">Kameralı tespit</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Kimyasal Çözücüler:</strong> Uygun durumlarda özel kimyasallar</span>
+						<span class="text-xl text-[#000000]">Aynı gün servis</span>
 					</li>
 					<li class="flex items-start">
 						<span class="text-[#fad000] mr-3 font-bold">•</span>
-						<span class="text-lg text-[#000000]"><strong>Mekanik Yöntemler:</strong> Özel aletlerle fiziksel temizlik</span>
+						<span class="text-xl text-[#000000]">Garantili işçilik</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Temiz ve titiz çalışma</span>
 					</li>
 				</ul>
 
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Tıkanıklık Nedenleri
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Nasıl Çalışıyoruz?
 				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
-					Lavabo tıkanıklıklarının başlıca nedenleri yağ birikmesi, çay posası, deterjan kalıntıları ve boru eğim hatalarıdır. Tuvalet tıkanıklıkları ise genellikle yabancı cisim düşmesi veya fazla tuvalet kağıdı kullanımından kaynaklanır. Tıkanıklığın nedeni kameralı sistemlerle tespit edilir ve uygun yöntemle açılır.
-				</p>
+				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">1.</span>
+						<span class="text-xl text-[#000000]">Kameralı sistemle tıkanıklık noktası tespit edilir</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">2.</span>
+						<span class="text-xl text-[#000000]">Makine ile tıkanıklık açılır</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">3.</span>
+						<span class="text-xl text-[#000000]">Hat temizlenir</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">4.</span>
+						<span class="text-xl text-[#000000]">Son kontrol yapılarak teslim edilir</span>
+					</li>
+				</ul>
 
-				<h2 class="text-2xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
-					Önleme Önerileri
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Ne Zaman Müdahale Gerekir?
 				</h2>
-				<p class="text-lg text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
-					Tıkanıklıkları önlemek için süzgeç kullanın, yağları lavaboya dökmeyin ve haftada bir kez sıcak su uygulayın. Tekrar eden tıkanıklıklarda mutlaka profesyonel müdahale gereklidir çünkü altta yatan bir boru problemi olabilir.
+				<ul class="space-y-3 mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Su yavaş akıyorsa</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Koku geliyorsa</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Su geri taşıyorsa</span>
+					</li>
+					<li class="flex items-start">
+						<span class="text-[#fad000] mr-3 font-bold">•</span>
+						<span class="text-xl text-[#000000]">Sürekli tıkanma tekrar ediyorsa</span>
+					</li>
+				</ul>
+
+				<h2 class="text-3xl font-bold text-[#000000] mb-4 mt-8" style="font-family: 'Roboto Condensed', sans-serif;">
+					Hizmet Bölgeleri
+				</h2>
+				<p class="text-xl text-[#000000] leading-relaxed mb-6" style="font-family: 'Roboto Condensed', sans-serif;">
+					İlkadım, Canik, Atakum, Tekkeköy ve Samsun genelinde hizmet vermekteyiz.
 				</p>
 				
 				<div class="mt-8 overflow-hidden rounded-lg">
@@ -93,7 +171,35 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 					/>
 				</div>
 			</div>
+
+			<!-- Alt Çağrı Alanı -->
+			<div class="bg-[#e3decf] p-8 rounded-lg shadow-md text-center">
+				<h2 class="text-3xl sm:text-4xl font-bold text-[#000000] mb-4" style="font-family: 'Roboto Condensed', sans-serif;">
+					Tıkanıklık açma hizmeti için hemen bizimle iletişime geçin.
+				</h2>
+				<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+					<a
+						href="tel:05346706294"
+						class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-[#000000] font-bold text-xl animate-pulse-soft"
+						aria-label="Hemen Ara"
+					>
+						<img src={phoneIcon.src} alt="Telefon" class="w-6 h-6" />
+						<span>Hemen Ara <span class="font-bold">7/24</span></span>
+					</a>
+					<a
+						href="https://wa.me/905346706294"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-bold text-xl"
+						aria-label="WhatsApp'tan Yaz"
+					>
+						<img src={whatsappIcon.src} alt="WhatsApp" class="w-6 h-6 brightness-0 invert" />
+						<span>WhatsApp'tan Yaz</span>
+					</a>
+				</div>
+			</div>
 		</div>
+	</div>
 	</div>
 </Layout>
 
@@ -119,7 +225,7 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 		{ "@type": "City", "name": "Canik" },
 		{ "@type": "City", "name": "Tekkeköy" }
 	],
-	"description": "Gider, banyo, lavabo, tuvalet ve rögar tıkanıklıklarını kameralı sistemler ve profesyonel makinelerle kırmadan açıyoruz. Tekrar eden tıkanıklıkları kalıcı şekilde çözüyor, kötü kokuları gideriyor ve tesisattaki akışı yeniden düzenliyoruz."
+	"description": "Samsun genelinde kameralı ve makine destekli tıkanıklık açma hizmeti. Kırmadan işlem, garantili işçilik, aynı gün servis."
 }).replace(/</g, '\\u003c')} />
 
 <style>
@@ -140,7 +246,6 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 		background-position: 0 0;
 	}
 
-	/* Ensure content stays above background */
 	.tiled-background-wrapper > div:not(.tiled-background-pattern) {
 		position: relative;
 		z-index: 1;
@@ -151,6 +256,19 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 		backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 	}
+
+	@keyframes pulse-soft {
+		0%, 100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.05);
+		}
+	}
+	
+	.animate-pulse-soft {
+		animation: pulse-soft 1.5s ease-in-out infinite;
+	}
 </style>
 
 <script>
@@ -160,7 +278,6 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 
 		function updateParallax() {
 			const scrollY = window.pageYOffset || window.scrollY || document.documentElement.scrollTop;
-			// Use 0.25 scroll factor for all views
 			const scrollFactor = 0.25;
 
 			parallaxElements.forEach((element) => {
@@ -168,9 +285,7 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 				const wrapper = htmlElement.closest('.tiled-background-wrapper') as HTMLElement;
 				if (!wrapper) return;
 
-				// Calculate background position offset based on scroll position
 				const offsetY = scrollY * scrollFactor;
-				// Keep the pattern seamless by using modulo
 				const tileSize = 200;
 				const normalizedOffset = offsetY % tileSize;
 				
@@ -178,7 +293,6 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 			});
 		}
 
-		// Throttle scroll events for better performance
 		let ticking = false;
 		function onScroll() {
 			if (!ticking) {
@@ -190,25 +304,19 @@ import tikaniklikAcmaImage from '../assets/services/tikaniklikacma.jpg';
 			}
 		}
 
-		// Initial calculation
 		updateParallax();
-
-		// Listen to scroll events
 		window.addEventListener('scroll', onScroll, { passive: true });
 		window.addEventListener('resize', updateParallax);
 
-		// Cleanup function
 		return () => {
 			window.removeEventListener('scroll', onScroll);
 			window.removeEventListener('resize', updateParallax);
 		};
 	}
 
-	// Initialize when DOM is ready
 	if (document.readyState === 'loading') {
 		document.addEventListener('DOMContentLoaded', initParallax);
 	} else {
 		initParallax();
 	}
 </script>
-

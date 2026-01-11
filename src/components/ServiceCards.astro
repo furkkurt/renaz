@@ -1,199 +1,234 @@
 ---
-import bg2 from '../assets/bgImages/bg2.webp';
-import bg3 from '../assets/bgImages/bg3.webp';
-import bg4 from '../assets/bgImages/bg4.webp';
-import bg5 from '../assets/bgImages/bg5.webp';
-import bg6 from '../assets/bgImages/bg6.webp';
-import bg7 from '../assets/bgImages/bg7.webp';
-import bg8 from '../assets/bgImages/bg8.webp';
-import otherImage from '../assets/services/other.jpeg';
+import sihhiIcon from '../assets/serviceIcons/sihhi.svg';
+import kombiIcon from '../assets/serviceIcons/kombi.svg';
+import petekIcon from '../assets/serviceIcons/petek.svg';
+import tikaniklikIcon from '../assets/serviceIcons/tikaniklik.svg';
+import suIcon from '../assets/serviceIcons/su.svg';
+import bataryaIcon from '../assets/serviceIcons/batarya.svg';
+import banyoIcon from '../assets/serviceIcons/banyo.svg';
+import digerIcon from '../assets/serviceIcons/diger.svg';
 ---
 
-<section class="py-16 bg-[#e3decf]">
+<section class="py-16 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl sm:text-4xl font-bold text-[#000000] mb-12 text-center" style="font-family: 'Roboto Condensed', sans-serif;">
+      Ana Hizmetlerimiz
+    </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <!-- Card 1: Sıhhi Tesisat Çözümleri -->
       <a
         href="/sihhi-tesisat"
-        class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+        class="group bg-white rounded-lg border-2 border-[#e3decf] hover:border-[#fad000] shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col"
       >
-        <div class="absolute inset-0">
-          <img
-            src={bg2.src}
-            alt="Sıhhi Tesisat Çözümleri"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
+        <div class="flex items-start gap-4 mb-4">
+          <div class="flex-shrink-0 w-[90px] h-[60px] rounded-lg overflow-hidden bg-[#e3decf] flex items-center justify-center p-2">
+            <img
+              src={sihhiIcon.src}
+              alt="Sıhhi Tesisat"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-[#000000] mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
+              Sıhhi Tesisat Çözümleri
+            </h3>
+          </div>
         </div>
-        <div class="relative z-10 h-full flex flex-col justify-end p-6 text-white">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
-            Sıhhi Tesisat Çözümleri
-          </h3>
-          <p class="text-sm leading-relaxed opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
-            Profesyonel tesisat tamiri ve bakım hizmetleri
-          </p>
-        </div>
+        <p class="text-xl text-[#000000] mb-4 flex-grow" style="font-family: 'Roboto Condensed', sans-serif;">
+          Ev ve iş yerlerinizde tüm tesisat arızalarına profesyonel çözümler.
+        </p>
+        <span class="text-[#fad000] font-bold inline-flex items-center gap-2" style="font-family: 'Roboto Condensed', sans-serif;">
+          👉 Detaylı bilgi
+        </span>
       </a>
 
       <!-- Card 2: Kombi Bakım ve Arıza Çözümleri -->
       <a
         href="/kombi-bakim-ve-ariza-cozumleri"
-        class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+        class="group bg-white rounded-lg border-2 border-[#e3decf] hover:border-[#fad000] shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col"
       >
-        <div class="absolute inset-0">
-          <img
-            src={bg3.src}
-            alt="Kombi Bakım ve Arıza Çözümleri"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
+        <div class="flex items-start gap-4 mb-4">
+          <div class="flex-shrink-0 w-[90px] h-[60px] rounded-lg overflow-hidden bg-[#e3decf] flex items-center justify-center p-2">
+            <img
+              src={kombiIcon.src}
+              alt="Kombi Bakım"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-[#000000] mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
+              Kombi Bakım ve Arıza Çözümleri
+            </h3>
+          </div>
         </div>
-        <div class="relative z-10 h-full flex flex-col justify-end p-6 text-white">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
-            Kombi Bakım ve Arıza Çözümleri
-          </h3>
-          <p class="text-sm leading-relaxed opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
-            Tüm marka kombiler için bakım ve onarım
-          </p>
-        </div>
+        <p class="text-xl text-[#000000] mb-4 flex-grow" style="font-family: 'Roboto Condensed', sans-serif;">
+          Tüm marka kombiler için bakım, onarım ve arıza çözümleri.
+        </p>
+        <span class="text-[#fad000] font-bold inline-flex items-center gap-2" style="font-family: 'Roboto Condensed', sans-serif;">
+          👉 Detaylı bilgi
+        </span>
       </a>
 
       <!-- Card 3: Petek Temizliği -->
       <a
         href="/petek-temizligi"
-        class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+        class="group bg-white rounded-lg border-2 border-[#e3decf] hover:border-[#fad000] shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col"
       >
-        <div class="absolute inset-0">
-          <img
-            src={bg4.src}
-            alt="Petek Temizliği"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
+        <div class="flex items-start gap-4 mb-4">
+          <div class="flex-shrink-0 w-[90px] h-[60px] rounded-lg overflow-hidden bg-[#e3decf] flex items-center justify-center p-2">
+            <img
+              src={petekIcon.src}
+              alt="Petek Temizliği"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-[#000000] mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
+              Petek Temizliği
+            </h3>
+          </div>
         </div>
-        <div class="relative z-10 h-full flex flex-col justify-end p-6 text-white">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
-            Petek Temizliği
-          </h3>
-          <p class="text-sm leading-relaxed opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
-            Makine destekli profesyonel petek temizliği
-          </p>
-        </div>
+        <p class="text-xl text-[#000000] mb-4 flex-grow" style="font-family: 'Roboto Condensed', sans-serif;">
+          Makine destekli petek temizliği ile daha iyi ısınma ve tasarruf.
+        </p>
+        <span class="text-[#fad000] font-bold inline-flex items-center gap-2" style="font-family: 'Roboto Condensed', sans-serif;">
+          👉 Detaylı bilgi
+        </span>
       </a>
 
       <!-- Card 4: Tıkanıklık Açma -->
       <a
         href="/tikaniklik-acma"
-        class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+        class="group bg-white rounded-lg border-2 border-[#e3decf] hover:border-[#fad000] shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col"
       >
-        <div class="absolute inset-0">
-          <img
-            src={bg5.src}
-            alt="Tıkanıklık Açma"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
+        <div class="flex items-start gap-4 mb-4">
+          <div class="flex-shrink-0 w-[90px] h-[60px] rounded-lg overflow-hidden bg-[#e3decf] flex items-center justify-center p-2">
+            <img
+              src={tikaniklikIcon.src}
+              alt="Tıkanıklık Açma"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-[#000000] mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
+              Tıkanıklık Açma
+            </h3>
+          </div>
         </div>
-        <div class="relative z-10 h-full flex flex-col justify-end p-6 text-white">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
-            Tıkanıklık Açma
-          </h3>
-          <p class="text-sm leading-relaxed opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
-            Kırmadan kameralı gider açma hizmeti
-          </p>
-        </div>
+        <p class="text-xl text-[#000000] mb-4 flex-grow" style="font-family: 'Roboto Condensed', sans-serif;">
+          Lavabo, tuvalet ve gider tıkanıklıkları kameralı sistemlerle açılır.
+        </p>
+        <span class="text-[#fad000] font-bold inline-flex items-center gap-2" style="font-family: 'Roboto Condensed', sans-serif;">
+          👉 Detaylı bilgi
+        </span>
       </a>
 
       <!-- Card 5: Su Kaçağı Tespiti -->
       <a
         href="/su-kacagi-tespiti"
-        class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+        class="group bg-white rounded-lg border-2 border-[#e3decf] hover:border-[#fad000] shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col"
       >
-        <div class="absolute inset-0">
-          <img
-            src={bg6.src}
-            alt="Su Kaçağı Tespiti"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
+        <div class="flex items-start gap-4 mb-4">
+          <div class="flex-shrink-0 w-[90px] h-[60px] rounded-lg overflow-hidden bg-[#e3decf] flex items-center justify-center p-2">
+            <img
+              src={suIcon.src}
+              alt="Su Kaçağı Tespiti"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-[#000000] mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
+              Su Kaçağı Tespiti
+            </h3>
+          </div>
         </div>
-        <div class="relative z-10 h-full flex flex-col justify-end p-6 text-white">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
-            Su Kaçağı Tespiti
-          </h3>
-          <p class="text-sm leading-relaxed opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
-            Akustik ve termal kamera ile nokta atışı tespit
-          </p>
-        </div>
+        <p class="text-xl text-[#000000] mb-4 flex-grow" style="font-family: 'Roboto Condensed', sans-serif;">
+          Duvar ve zemini kırmadan nokta atışı kaçak tespiti.
+        </p>
+        <span class="text-[#fad000] font-bold inline-flex items-center gap-2" style="font-family: 'Roboto Condensed', sans-serif;">
+          👉 Detaylı bilgi
+        </span>
       </a>
 
       <!-- Card 6: Batarya, Musluk, Klozet Tamir & Değişimi -->
       <a
         href="/batarya-musluk-klozet-tamir-degisimi"
-        class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+        class="group bg-white rounded-lg border-2 border-[#e3decf] hover:border-[#fad000] shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col"
       >
-        <div class="absolute inset-0">
-          <img
-            src={bg7.src}
-            alt="Batarya, Musluk, Klozet Tamir & Değişimi"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
+        <div class="flex items-start gap-4 mb-4">
+          <div class="flex-shrink-0 w-[90px] h-[60px] rounded-lg overflow-hidden bg-[#e3decf] flex items-center justify-center p-2">
+            <img
+              src={bataryaIcon.src}
+              alt="Batarya, Musluk, Klozet"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-[#000000] mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
+              Batarya, Musluk, Klozet Tamir & Değişimi
+            </h3>
+          </div>
         </div>
-        <div class="relative z-10 h-full flex flex-col justify-end p-6 text-white">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
-            Batarya, Musluk, Klozet Tamir & Değişimi
-          </h3>
-          <p class="text-sm leading-relaxed opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
-            Montaj, tamir ve değişim hizmetleri
-          </p>
-        </div>
+        <p class="text-xl text-[#000000] mb-4 flex-grow" style="font-family: 'Roboto Condensed', sans-serif;">
+          Montaj, tamir ve değişim hizmetleri.
+        </p>
+        <span class="text-[#fad000] font-bold inline-flex items-center gap-2" style="font-family: 'Roboto Condensed', sans-serif;">
+          👉 Detaylı bilgi
+        </span>
       </a>
 
       <!-- Card 7: Banyo & Mutfak Yenileme (Tadilat) -->
       <a
         href="/banyo-mutfak-yenileme-tadilat"
-        class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+        class="group bg-white rounded-lg border-2 border-[#e3decf] hover:border-[#fad000] shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col"
       >
-        <div class="absolute inset-0">
-          <img
-            src={bg8.src}
-            alt="Banyo & Mutfak Yenileme (Tadilat)"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
+        <div class="flex items-start gap-4 mb-4">
+          <div class="flex-shrink-0 w-[90px] h-[60px] rounded-lg overflow-hidden bg-[#e3decf] flex items-center justify-center p-2">
+            <img
+              src={banyoIcon.src}
+              alt="Banyo & Mutfak Tadilat"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-[#000000] mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
+              Banyo & Mutfak Yenileme (Tadilat)
+            </h3>
+          </div>
         </div>
-        <div class="relative z-10 h-full flex flex-col justify-end p-6 text-white">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
-            Banyo & Mutfak Yenileme (Tadilat)
-          </h3>
-          <p class="text-sm leading-relaxed opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
-            Anahtar teslim yenileme çözümleri
-          </p>
-        </div>
+        <p class="text-xl text-[#000000] mb-4 flex-grow" style="font-family: 'Roboto Condensed', sans-serif;">
+          Anahtar teslim yenileme çözümleri.
+        </p>
+        <span class="text-[#fad000] font-bold inline-flex items-center gap-2" style="font-family: 'Roboto Condensed', sans-serif;">
+          👉 Detaylı bilgi
+        </span>
       </a>
 
-      <!-- Card 8: Diğer / İletişim -->
+      <!-- Card 8: Diğer -->
       <a
         href="/iletisim"
-        class="group relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+        class="group bg-white rounded-lg border-2 border-[#e3decf] hover:border-[#fad000] shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-6 flex flex-col"
       >
-        <div class="absolute inset-0">
-          <img
-            src={otherImage.src}
-            alt="Diğer Hizmetler"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-          <div class="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300"></div>
+        <div class="flex items-start gap-4 mb-4">
+          <div class="flex-shrink-0 w-[90px] h-[60px] rounded-lg overflow-hidden bg-[#e3decf] flex items-center justify-center p-2">
+            <img
+              src={digerIcon.src}
+              alt="Diğer Hizmetler"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-[#000000] mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
+              Diğer
+            </h3>
+          </div>
         </div>
-        <div class="relative z-10 h-full flex flex-col justify-end p-6 text-white">
-          <h3 class="text-xl font-bold mb-2 group-hover:text-[#fad000] transition-colors" style="font-family: 'Roboto Condensed', sans-serif;">
-            Diğer Hizmetler
-          </h3>
-          <p class="text-sm leading-relaxed opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
-            Tüm tesisat ve tadilat ihtiyaçlarınız için bize ulaşın
-          </p>
-        </div>
+        <p class="text-xl text-[#000000] mb-4 flex-grow" style="font-family: 'Roboto Condensed', sans-serif;">
+          Tüm tesisat ve tadilat ihtiyaçlarınız için bize ulaşın.
+        </p>
+        <span class="text-[#fad000] font-bold inline-flex items-center gap-2" style="font-family: 'Roboto Condensed', sans-serif;">
+          👉 Detaylı bilgi
+        </span>
       </a>
     </div>
   </div>

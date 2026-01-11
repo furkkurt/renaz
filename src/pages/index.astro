@@ -1,22 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HomeHero from '../components/HomeHero.astro';
+import SpeedTrustBar from '../components/SpeedTrustBar.astro';
 import ServiceCards from '../components/ServiceCards.astro';
-import EmergencyService from '../components/EmergencyService.astro';
 import WhyRenaz from '../components/WhyRenaz.astro';
-import FeaturedServices from '../components/FeaturedServices.astro';
-import TrustGuarantee from '../components/TrustGuarantee.astro';
-import LocationService from '../components/LocationService.astro';
+import ServiceAreas from '../components/ServiceAreas.astro';
+import HomeCTA from '../components/HomeCTA.astro';
 ---
 
 <Layout>
 	<HomeHero />
+	<SpeedTrustBar />
 	<ServiceCards />
-	<EmergencyService />
 	<WhyRenaz />
-	<FeaturedServices />
-	<TrustGuarantee />
-	<LocationService />
+	<ServiceAreas />
+	<HomeCTA />
 </Layout>
 
 <script is:inline>

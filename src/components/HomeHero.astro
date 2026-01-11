@@ -10,7 +10,7 @@ import bgImage from '../assets/bgImages/bg1.webp';
     <img
       src={bgImage.src}
       alt="Renaz Teknik Background"
-      class="w-full h-full object-cover blur-xs md:blur-sm"
+      class="w-full h-full object-cover hero-bg-image"
       fetchpriority="high"
       decoding="async"
     />
@@ -23,40 +23,42 @@ import bgImage from '../assets/bgImages/bg1.webp';
     <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl text-left hero-content-left">
         <!-- H1 Title -->
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style="font-family: 'Roboto Condensed', sans-serif;">
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight" style="font-family: 'Roboto Condensed', sans-serif;">
           Samsun Acil Sıhhi Tesisat & Kombi Servisi
         </h1>
         
-        <!-- Yellow Accent Line -->
-        <div class="h-1 w-24 bg-[#fad000] mb-6"></div>
+        <!-- Subtitle (1 line) -->
+        <p class="text-xl sm:text-2xl lg:text-3xl text-white mb-4 opacity-90" style="font-family: 'Roboto Condensed', sans-serif;">
+          Tıkanıklık açma • Su kaçağı tespiti • Kombi bakım • Petek temizliği
+        </p>
         
         <!-- Short Description -->
         <p class="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed mb-8 max-w-2xl" style="font-family: 'Roboto Condensed', sans-serif;">
-          Tıkanıklık açma, su kaçağı tespiti, kombi arıza ve petek temizliği hizmetlerini Samsun genelinde hızlı ve garantili şekilde sunuyoruz.
+          Samsun genelinde aynı gün servis, garantili işçilik ve hızlı çözümler sunuyoruz.
         </p>
 
         <!-- Buttons -->
         <div class="flex flex-col sm:flex-row items-start gap-4">
-          <!-- Phone Button -->
+          <!-- Phone Button (Yellow) -->
           <a
             href="tel:05346706294"
-            class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-semibold text-lg"
+            class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-[#000000] font-bold text-xl animate-pulse-soft"
             aria-label="Hemen Ara"
           >
             <img
               src={phoneIcon.src}
               alt="Telefon"
-              class="w-6 h-6 brightness-0 invert"
+              class="w-6 h-6"
             />
-            <span>Hemen Ara</span>
+            <span>Hemen Ara <span class="font-bold">7/24</span></span>
           </a>
 
-          <!-- WhatsApp Button -->
+          <!-- WhatsApp Button (Green) -->
           <a
             href="https://wa.me/905346706294"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-semibold text-lg"
+            class="bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-white font-bold text-xl"
             aria-label="WhatsApp'tan Yaz"
           >
             <img
@@ -71,4 +73,29 @@ import bgImage from '../assets/bgImages/bg1.webp';
     </div>
   </div>
 </section>
+
+<style>
+  @keyframes pulse-soft {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .animate-pulse-soft {
+    animation: pulse-soft 1.5s ease-in-out infinite;
+  }
+
+  .hero-bg-image {
+    object-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .hero-bg-image {
+      object-position: 90% center;
+    }
+  }
+</style>
 
