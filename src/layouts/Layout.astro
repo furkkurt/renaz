@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import WhatsAppButton from '../components/WhatsAppButton.astro';
+import TopContactButtons from '../components/TopContactButtons.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -223,11 +223,14 @@ const googleAdsConversionLabel = 'M2XUCOj7p8EbEOqGr4ZC';
 	</head>
 	<body class="min-h-screen flex flex-col bg-[#eeeeee]">
 		<Header />
+		<!-- Contact Buttons - Fixed position, adjusts based on hero section -->
+		<div class="fixed top-24 left-6 z-[60] hero-buttons">
+			<TopContactButtons />
+		</div>
 		<main class="flex-grow">
 			<slot />
 		</main>
 		<Footer />
-		<WhatsAppButton />
 	</body>
 	
 	<script>

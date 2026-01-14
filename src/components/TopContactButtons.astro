@@ -1,0 +1,51 @@
+---
+import whatsappIcon from '../assets/whatsapp.svg';
+import phoneIcon from '../assets/phone.svg';
+---
+
+<div class="top-contact-buttons flex flex-row gap-3">
+  <!-- Phone Button (Yellow) -->
+  <a
+    href="tel:05346706294"
+    class="phone-button bg-[#fad000] hover:bg-[#e6c400] rounded-lg px-3 py-2 md:px-6 md:py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-1 md:gap-2 text-[#000000] font-bold text-sm md:text-xl animate-pulse-soft"
+    aria-label="Hemen Ara"
+  >
+    <img
+      src={phoneIcon.src}
+      alt="Telefon"
+      class="w-4 h-4 md:w-6 md:h-6"
+    />
+    <span class="whitespace-nowrap">Hemen Ara <span class="font-bold">7/24</span></span>
+  </a>
+
+  <!-- WhatsApp Button (Green) -->
+  <a
+    href="https://wa.me/905346706294"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-button bg-[#25D366] hover:bg-[#20BA5A] rounded-lg px-3 py-2 md:px-6 md:py-3 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-1 md:gap-2 text-white font-bold text-sm md:text-xl animate-pulse-soft"
+    aria-label="WhatsApp'tan Yaz"
+  >
+    <img
+      src={whatsappIcon.src}
+      alt="WhatsApp"
+      class="w-4 h-4 md:w-6 md:h-6 brightness-0 invert"
+    />
+    <span class="whitespace-nowrap">WhatsApp'tan Yaz</span>
+  </a>
+</div>
+
+<style>
+  @keyframes pulse-soft {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .animate-pulse-soft {
+    animation: pulse-soft 1.5s ease-in-out infinite;
+  }
+</style>
